@@ -287,6 +287,7 @@ body {
   height: 70px;
   margin-bottom: -6px;
   z-index: 1;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 110%, 23% 50%);
   transition: opacity .3s ease-in;
 }
 
