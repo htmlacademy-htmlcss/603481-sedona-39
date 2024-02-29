@@ -118,12 +118,12 @@
               <div class="filter-price-controls">
                 <label class="filter-form-label-price" for="min-price">
                   <span class="filter-form-text filter-form-range-min-price">от</span>
-                  <input class="form-input filter-form-range-min-price" type="number" id="min-price" name="min-price" value="0">
+                  <input class="form-input filter-form-range-min-price" type="number" inputmode="numeric" pattern="\d*" id="min-price" name="min-price" value="0">
                 </label>
 
                 <label class="filter-form-label-price" for="max-price">
                   <span class="filter-form-text filter-form-range-max-price">до</span>
-                  <input class="form-input filter-form-range-max-price" type="number" id="max-price" name="max-price" value="9000">
+                  <input class="form-input filter-form-range-max-price" type="number" inputmode="numeric" pattern="\d*" id="max-price" name="max-price" value="9000">
                 </label>
               </div>
             </fieldset>
@@ -286,7 +286,7 @@
 
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Укажите ваш e-mail</label>
-            <input class="subscribe-input form-input" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
+            <input class="subscribe-input form-input" type="email" inputmode="email" id="email" name="email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button button button-light" type="submit">Подписаться</button>
           </form>
         </div>
