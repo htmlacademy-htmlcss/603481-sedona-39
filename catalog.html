@@ -117,14 +117,27 @@
 
               <div class="filter-price-controls">
                 <label class="filter-form-label-price" for="min-price">
-                  <span class="filter-form-text filter-form-range-min-price">от</span>
-                  <input class="form-input filter-form-range-min-price" type="number" inputmode="numeric" pattern="\d*" id="min-price" name="min-price" value="0">
+                  <span class="filter-form-text">от</span>
+                  <input class="form-input filter-form-range filter-form-range-min-price" type="number" inputmode="numeric" pattern="\d*" id="min-price" name="min-price" value="0">
                 </label>
 
                 <label class="filter-form-label-price" for="max-price">
-                  <span class="filter-form-text filter-form-range-max-price">до</span>
-                  <input class="form-input filter-form-range-max-price" type="number" inputmode="numeric" pattern="\d*" id="max-price" name="max-price" value="9000">
+                  <span class="filter-form-text">до</span>
+                  <input class="form-input filter-form-range filter-form-range-max-price" type="number" inputmode="numeric" pattern="\d*" id="max-price" name="max-price" value="9000">
                 </label>
+              </div>
+
+              <div class="filter-range">
+                <div class="filter-range-scale">
+                  <div class="filter-rage-bar" style="left: 0; width: 226px;">
+                    <button class="filter-range-toggle filter-toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="filter-range-toggle filter-toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </fieldset>
 
