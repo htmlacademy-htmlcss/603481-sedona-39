@@ -1614,3 +1614,342 @@ body {
 }
 /* // Htmlacademy link */
 /* // Footer */
+
+/* Modal */
+.modal-window {
+  position: relative;
+  width: 717px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+
+  margin: 100px auto;
+}
+
+.modal-window::backdrop {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+/* Modal button close */
+.modal-button-close {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  z-index: 1;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-button-close::before,
+.modal-button-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 17px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.modal-button-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-button-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal-button-close:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-button-close:focus-visible {
+  background-color: #e6e6e6;
+  outline: none;
+}
+
+@supports not selector(:focus-visible) {
+  .modal-button-close:focus {
+    background-color: #e6e6e6;
+    outline: none;
+  }
+}
+
+.modal-button-close:active {
+  background-color: #e6e6e6;
+}
+
+.modal-button-close:active::before,
+.modal-button-close:active::after {
+  opacity: 0.3;
+}
+/* // Modal button close */
+
+.modal-container {
+  padding: 64px 70px 72px;
+}
+
+.modal-title {
+  text-align-last: left;
+  margin: 0 0 64px;
+}
+
+/* Modal form */
+.modal-form {
+  display: grid;
+  grid-template-columns: 248px 1fr;
+  gap: 23px 48px;
+}
+
+.modal-fieldset-group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-group-fieldset-date {
+  grid-column: 1 / -1;
+}
+
+.modal-form-label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.modal-form-label-data {
+  display: grid;
+  grid-template-columns: 114px 1fr;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.modal-form-input-date {
+  padding: 12px 56px 10px 18px;
+  background-image: url("../images/icons/date.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 16px 15px;
+}
+
+.modal-form-message {
+  grid-column: 2 / -1;
+  padding: 4px 20px 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: none;
+}
+
+.form-message-error {
+  color: #ff5757;
+}
+
+.modal-group-adults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.modal-group-children {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-form-container {
+  display: flex;
+  overflow: hidden;
+  border-radius: 4px;
+  outline: none;
+}
+
+.modal-form-container:focus-within {
+  outline: 1px solid #000000;
+}
+
+.modal-form-label-adults {
+  margin-right: 10px;
+}
+
+.modal-form-input {
+  width: 31px;
+  padding: 13px 5px 11px;
+  line-height: 20px;
+  text-align: center;
+  appearance: textfield;
+  border: 0;
+  outline: none;
+}
+
+.modal-form-input[type="number"]::-webkit-outer-spin-button,
+.modal-form-input[type="number"]::-webkit-inner-spin-button {
+  margin: 0;
+
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.modal-form-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.modal-form-input-number {
+  padding: 5px 65px;
+  text-align: center;
+}
+
+/* Button */
+.modal-form-button   {
+  display: flex;
+  width: 40px;
+  min-height: 48px;
+  padding: 0;
+  background-color: #f2f2f2;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.modal-form-button::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  background-color: rgba(117, 97, 87, 0.3);
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.modal-form-button-decrease::after {
+  -webkit-mask: url("../images/icons/minus.svg");
+  mask: url("../images/icons/minus.svg");
+}
+
+.modal-form-button-increase::after {
+  -webkit-mask: url("../images/icons/plus.svg");
+  mask: url("../images/icons/plus.svg");
+}
+
+.modal-form-button:not(:disabled):hover::after {
+  background-color: #000000;
+}
+
+.modal-form-button:not(:disabled):active::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* // Button */
+
+/* Tooltip */
+.modal-with-tooltip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  min-width: 95px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.modal-tooltip {
+  position: relative;
+}
+
+.modal-tooltip-text {
+  position: absolute;
+  top: 100%;
+  left: 53%;
+  display: none;
+  width: 256px;
+  margin-top: 13px;
+  padding: 20px 18px 23px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
+}
+
+.modal-tooltip-text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  width: 20px;
+  height: 9px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../images/icons/tooltip-arrow.svg");
+}
+
+.modal-tooltip-toggle {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+
+  background-color: #83b3d3;
+  border-radius: 50%;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-tooltip-toggle::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+
+  top: 50%;
+  left: 50%;
+
+    -webkit-mask: url("../images/icons/info.svg") center / contain no-repeat;
+    mask: url("../images/icons/info.svg") center / contain no-repeat;
+
+    background-color: #fff;
+
+    transform: translate(-50%, -50%);
+}
+
+.modal-tooltip-toggle:hover + .modal-tooltip-text,
+.modal-tooltip-toggle:focus-visible + .modal-tooltip-text {
+  display: block;
+}
+/* // Tooltip */
+
+/* Modal form button */
+.modal-search-button {
+  grid-column: 1 / -1;
+  padding: 12px 10px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+/* // Modal form button */
+/* // Modal form */
+/* // Modal */
