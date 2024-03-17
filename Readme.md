@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Максим Валерьевич](https://up.htmlacademy.ru/htmlcss/39/user/603481).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Личный проект «Седона»](https://ekburalec.github.io/603481-sedona-39/).
 
 ---
 
