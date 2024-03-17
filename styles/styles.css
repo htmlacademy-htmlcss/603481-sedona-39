@@ -968,7 +968,7 @@ body {
   border: 1px solid transparent;
 }
 
-.filter-range-toggle:hover {
+.filter-range-toggle:active {
   box-shadow: 0 0 0 2px #83b3d3;
 }
 
@@ -1614,6 +1614,7 @@ body {
   text-align: center;
   appearance: textfield;
   border: 0;
+  border-radius: 0;
 }
 
 .modal-form-container .modal-form-input[type="number"]::placeholder {
