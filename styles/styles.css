@@ -404,7 +404,7 @@ body {
 .hero {
   color: #fff;
   background-color: #708ea1;
-  background-image: url(../images/icons/divider.svg), url(../images/hero-bg.jpg);
+  background-image: url("../images/icons/divider.svg"), url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
   background-position: bottom center;
@@ -612,7 +612,7 @@ body {
 }
 
 .subscribe-images {
-  background-color: #82B3D3;
+  background-color: #708ea1;
   background-image: url("../images/subscribe-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -660,7 +660,7 @@ body {
 
 /* Inner page catalog */
 .main-filter-container {
-  background-color: #82B3D3;
+  background-color: #708ea1;
   background-image: url("../images/form-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1064,7 +1064,7 @@ body {
   width: 48px;
   height: 48px;
 
-  display: inline-block;
+  display: block;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center;
@@ -1197,7 +1197,7 @@ body {
   mask-image: url("../images/icons/star.svg");
   -webkit-mask-repeat: repeat space;
   mask-repeat: repeat space;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   margin: 9px 0 0;
 }
 
@@ -1474,6 +1474,7 @@ body {
   padding: 64px 70px;
   background-color: #ffffff;
   margin: 0 auto;
+  color: #333333;
 }
 
 /* Modal button close */
@@ -1540,7 +1541,7 @@ body {
 .modal-form {
   display: grid;
   grid-template-columns: 248px 1fr;
-  gap: 23px 48px;
+  gap: 19px 48px;
 }
 
 .modal-field-group {
@@ -1555,8 +1556,8 @@ body {
 
 .modal-field-group-date {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0 24px;
+  grid-template-columns: minmax(92px, 120px) 1fr;
+  gap: 0 17px;
   align-items: center;
 }
 
@@ -1567,7 +1568,7 @@ body {
 .modal-form-input-date {
   grid-column: 2 / -1;
 
-  padding: 12px 56px 10px 18px;
+  padding: 13px 56px 12px 20px;
   background-image: url("../images/icons/date.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1609,7 +1610,7 @@ body {
 
 .modal-form-input {
   width: 31px;
-  padding: 13px 5px 11px;
+  padding: 12px 5px 12px;
   line-height: 20px;
   text-align: center;
   appearance: textfield;
@@ -1681,15 +1682,15 @@ body {
   mask: url("../images/icons/plus.svg");
 }
 
-.modal-form-button:not(:disabled):hover::after {
+.modal-form-button:hover::after {
   background-color: #000;
 }
 
-.modal-form-button:not(:disabled):focus-visible::after {
+.modal-form-button:focus-visible::after {
   background-color: #000;
 }
 
-.modal-form-button:not(:disabled):active::after {
+.modal-form-button:active::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /* // Button */
@@ -1709,7 +1710,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+  gap: 11px;
 }
 
 .modal-tooltip {
@@ -1719,7 +1720,7 @@ body {
 .modal-tooltip-text {
   position: absolute;
   top: 100%;
-  left: 53%;
+  left: 50%;
   display: none;
   width: 256px;
   margin-top: 13px;
@@ -1793,10 +1794,11 @@ body {
 
 /* Modal form button */
 .modal-search-button {
+  font-size: 20px;
   grid-column: 1 / -1;
-  padding: 12px 10px;
+  padding: 20px 10px;
   border-radius: 10px;
-  margin-top: 25px;
+  margin-top: 29px;
   background-color: #83b3d3;
 }
 
