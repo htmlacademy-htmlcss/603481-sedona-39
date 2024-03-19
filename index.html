@@ -98,6 +98,7 @@
           <h2 class="recommend-title title">Приезжайте в Седону отдохнуть в&nbsp;комфорте и уюте!</h2>
           <p class="recommend-desc">Опытный персонал и качественное обслуживание!</p>
         </div>
+
         <ul class="recommend-list list-reset">
           <li class="recommend-item recommend-item-housing">
             <h3 class="recommend-subtitle subtitle">Жильё</h3>
@@ -132,7 +133,7 @@
           <input class="subscribe-input form-input" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
           <button class="subscribe-button button button-light" type="submit">Подписаться</button>
         </form>
-    </section>
+      </section>
     </main>
 
     <footer class="footer-page" data-test="footer">
@@ -187,8 +188,6 @@
             <label class="modal-form-label modal-form-label-data" for="departure-date">Дата&nbsp;Выезда:</label>
             <input class="modal-form-input-date form-input" type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" value="1 сентября 2023" required>
             <span class="modal-form-message">На эти даты есть свободные номера. Пока есть.</span>
-
-
           </p>
 
           <p class="modal-field-group modal-group-adults">
@@ -199,7 +198,7 @@
                 <span class="visually-hidden">Уменьшить количество человек</span>
               </button>
 
-              <input class="modal-form-input modal-input-adults form-input" id="adults" name="adults" type="number" value="2" min="1" max="10" placeholder="0" required>
+              <input class="modal-form-input modal-input-adults form-input" id="adults" name="adults" type="number" value="2" min="1" max="10" placeholder="1" required>
 
               <button class="modal-form-button modal-form-button-increase" type="button">
                 <span class="visually-hidden">Увеличить количество человек</span>
@@ -225,7 +224,7 @@
                 <span class="visually-hidden">Уменьшить количество человек</span>
               </button>
 
-              <input class="modal-form-input modal-input-children form-input" id="children" name="children" type="number" value="2" min="1" max="10" placeholder="0" required>
+              <input class="modal-form-input modal-input-children form-input" id="children" name="children" type="number" value="2" min="0" max="10" placeholder="0" required>
 
               <button class="modal-form-button modal-form-button-increase" type="button">
                 <span class="visually-hidden">Увеличить количество человек</span>
